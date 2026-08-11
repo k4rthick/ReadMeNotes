@@ -1,0 +1,64 @@
+# Privacy Policy — Token Budget Manager
+
+**Last updated: August 11, 2026**
+
+Token Budget Manager ("the extension") is a browser extension that helps users track and manage their token usage on supported AI chat platforms. This policy explains exactly what data the extension touches, how it's used, and — just as importantly — what it never does.
+
+## Summary
+
+Token Budget Manager does not collect, transmit, sell, or share any user data. Everything the extension does happens locally, inside your own browser. There are no servers operated by this extension, no analytics, no tracking, and no accounts.
+
+## What data the extension reads
+
+The extension's content script runs only on these domains, which it needs explicit permission to access:
+
+- `chatgpt.com`
+- `chat.openai.com`
+- `claude.ai`
+
+On these pages, it reads the conversation text visible in the DOM in order to estimate token counts locally, in real time. This happens entirely within your browser's memory and is never transmitted anywhere.
+
+The extension does not access, read, or run on any other website.
+
+## What data the extension stores
+
+To provide budgets, alerts, forecasts, and usage history, the extension stores the following locally, in your browser's own IndexedDB storage (never on a remote server):
+
+- Token counts per conversation and per day
+- User-defined budget configurations (limits, scope, period)
+- Alert rule configurations and alert history
+- App settings and preferences
+
+This data lives only on your device, in your browser profile. Uninstalling the extension removes it. It is never synced to any external service, because the extension makes no network requests to do so.
+
+## What data the extension does NOT collect
+
+- No prompt or response content is ever transmitted off your device
+- No personally identifiable information (name, email, IP address, etc.) is collected
+- No browsing history outside the three supported domains is accessed
+- No analytics or telemetry of any kind
+- No advertising identifiers
+- No cookies are read or set by the extension
+
+## Permissions explained
+
+- **`notifications`** — used only to show a native browser notification when a user-configured alert rule fires (e.g., a daily budget being exceeded). This is gated behind a toggle in Settings; the extension only creates a notification when that preference is turned on.
+- **Host permissions** (`chatgpt.com`, `chat.openai.com`, `claude.ai`) — scoped to exactly the two supported AI providers, not a broad `<all_urls>` grant. This is what allows the content script and in-page widget to read conversation text locally on those pages.
+
+The extension does not request `storage` (all persistence uses the standard IndexedDB Web API, which needs no manifest permission), `tabs`, `activeTab`, `scripting`, `webRequest`, `cookies`, or `history`.
+
+## Third-party services
+
+None. The extension makes zero external network calls. There are no third-party analytics providers, ad networks, or remote APIs involved in the extension's operation.
+
+## Children's privacy
+
+The extension is not directed at children and does not knowingly collect any data from anyone, regardless of age, because it does not collect data at all.
+
+## Changes to this policy
+
+If this policy changes, the "Last updated" date above will be revised and the updated file will be committed to this repository. Continued use of the extension after a change constitutes acceptance of the revised policy.
+
+## Contact
+
+Questions about this privacy policy can be directed to: bekarthi@gmail.com
