@@ -1,0 +1,62 @@
+Privacy Policy
+
+Unblock — Right Click & Copy
+Publisher: code hulkify
+Effective date: 19 September 2026
+Contact: codehulkify@gmail.com
+
+In brief
+
+Unblock restores browser controls that a website blocks. It works locally in your browser. The extension has no server, account system, analytics, or telemetry, and does not send page content, clipboard data, settings, or browsing activity to code hulkify or another party.
+
+Local processing still involves handling some information. This policy explains that processing and the small amount of information saved on your device.
+
+What the extension handles locally
+
+Current page address. When you use the popup or shortcut, Unblock reads the active tab’s address to identify its hostname and determine whether it is a supported page. The full address is used transiently and is not saved as a browsing-history record or transmitted.
+
+Page structure and events. On a page you unlock, or a website you explicitly choose to always unlock, the bundled script changes selection-related styles and relevant page event handling. It inspects DOM attributes and styles and recognizes event types and the A/C/X/V shortcut keys as needed to restore controls. It does not log keystrokes or mouse activity, collect form entries, extract article text, analyze messages, or save a copy of the page.
+
+Explicit website preferences. If you enable “Always unlock on this website,” the extension stores that exact hostname and its enabled preference in chrome.storage.local. Chrome also retains the permission you approved and the script registration for that hostname. There are no stored visit timestamps, full-URL logs, usage counters, advertising identifiers, or user profiles. These settings are not synced by the extension.
+
+What the extension does not collect
+
+Unblock does not collect account details, names, email addresses, authentication credentials, payment information, health information, location, personal communications, or clipboard contents. It does not create a browsing-history log, monitor visits in the background for analytics, or use advertising or tracking services.
+
+Copy, cut, and paste are performed by your browser. Restoring those controls does not give Unblock a clipboard-reading feature or a copy of what you place on the clipboard.
+
+Why permissions are needed
+
+activeTab: temporary access to the page when you invoke the extension.
+scripting: run the bundled unlock script and register it for websites you explicitly enable.
+storage: retain your explicit website preferences on this device.
+Optional website access: requested only when you enable Always. It covers the selected exact hostname across HTTP/HTTPS and ports, not its subdomains, so future page loads can unlock automatically.
+Sharing, selling, and remote services
+
+The extension makes no requests to a developer-operated server and does not sell, share, or transmit the locally processed information. It has no analytics or telemetry providers and executes no remotely hosted code.
+
+The websites you visit continue to operate under their own privacy policies. Unblock does not prevent those websites from collecting information through their own functionality. Chrome and the Chrome Web Store are separately operated by Google under Google's terms and policies.
+
+Retention and your choices
+
+One-time activation changes the current document and ends when that document is replaced or reloaded, unless you enabled automatic unlocking for that website.
+
+Explicit website preferences remain on your device until you turn Always off, clear the extension's data, or uninstall it. Turning Always off removes that hostname's saved preference, script registration, and associated optional permission. Reload an already unlocked page to restore its original behavior. You can also manage website access from Chrome's extension settings; Unblock reconciles revoked access with its saved preferences.
+
+Uninstalling the extension removes its extension storage and registrations through Chrome. Since code hulkify does not receive the extension's local data, we cannot access or retrieve it for you. Unblock does not implement separate encryption for local preferences; they reside within your Chrome profile and device protections.
+
+If you contact support
+
+If you voluntarily email codehulkify@gmail.com, your email address and the information you choose to include are received through our email provider, Google Gmail. We use those messages to respond to your request and retain them as needed for support and applicable obligations. Please do not send passwords, private browsing data, or unnecessary sensitive information. You may request deletion of support correspondence by contacting the same address.
+
+This support correspondence is separate from the extension: the extension never automatically emails or uploads information. If you open a GitHub issue instead, your issue is governed by GitHub's privacy practices and may be public.
+
+Limited Use
+
+Unblock's use of information received from Chrome and Google APIs is limited to providing its stated browser-control restoration functionality and complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Such information is not used for advertising, profiling, creditworthiness, or unrelated purposes.
+
+Changes and contact
+
+We will update this policy if the extension's data practices change and revise the effective date. Material changes will be disclosed as required before new practices take effect.
+
+For privacy questions or support, contact code hulkify at codehulkify@gmail.com.
